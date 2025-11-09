@@ -1,0 +1,31 @@
+id,title,ecoImpact,category,difficulty
+1,Use a water bottle instead of a plastic bottle,5,Plastic,Easy
+2,Walk or bike for 15 minutes instead of taking the car,10,Mobility,Medium
+3,Turn off unnecessary lights at home,4,Energy,Easy
+4,Eat a vegetarian meal today,8,Nutrition,Medium
+5,Do proper waste sorting,6,Waste,Easy
+6,Use public transport to go to work,10,Mobility,Hard
+7,Reduce shower time to 5 minutes,5,Water,Easy
+8,Avoid single-use products for a day,7,Plastic,Medium
+9,Buy local or seasonal food,6,Nutrition,Easy
+10,Organize an ecological day with friends,15,Community,Hard
+11,Plant a tree in your neighborhood,20,Community,Hard
+12,Set a meat-free day,8,Nutrition,Medium
+13,Share a means of transport with a colleague,9,Mobility,Medium
+14,Install LED bulbs,6,Energy,Easy
+15,Participate in an environmental cleanup event,12,Community,Hard
+16,Create a sustainable urban garden,18,Community,Hard
+17,Organize a creative recycling workshop,15,Community,Hard
+18,Start a community composting project,16,Waste,Hard
+19,Install a rainwater collection system,14,Water,Hard
+20,Use a reusable bag for shopping,4,Plastic,Easy
+21,Turn off electronic devices instead of leaving them on standby,5,Energy,Easy
+22,Take an ecological walk collecting waste,7,Community,Medium
+23,Prepare lunch at home instead of buying takeout food,6,Waste,Easy
+24,Use reusable containers to store food,5,Plastic,Easy
+25,Adjust the thermostat by 1-2 degrees to save energy,8,Energy,Medium
+26,Choose products with less packaging at the supermarket,6,Plastic,Medium
+27,Make a shopping list to avoid food waste,5,Nutrition,Easy
+28,Organize a used clothes swap with friends,8,Community,Medium
+29,Repair an object instead of buying a new one,7,Waste,Medium
+30,Use pasta cooking water to water plants,4,Water,Easy
