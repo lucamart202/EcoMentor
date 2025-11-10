@@ -22,6 +22,16 @@ Users learn to reduce their environmental impact through **personalized challeng
 | **Custom Goals** | Users can set a CO₂ reduction goal and track their progress. |
 | **Gamification** | XP, levels and badges such as “EcoNovice”, “EcoSupporter”, “Green Hero”, and “EcoMaster”. |
 
+## How to Use
+
+You can try EcoMentor instantly online – **no installation required!**
+
+👉 **[Open the app here](https://lucamart202-ecomentor-app-5ru9qn.streamlit.app/)**
+
+1. Visit the link above.
+2. Register a new account or log in if you already have one.
+3. Explore personalized challenges, track your CO₂ savings, chat with the EcoMentor AI and set your own sustainability goals.
+
 ## Project Structure
 
 ```yaml
