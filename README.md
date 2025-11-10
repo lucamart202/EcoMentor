@@ -11,13 +11,13 @@ Users learn to reduce their environmental impact through **personalized challeng
 *“A small step for man, a giant leap for mankind.”* - **Every small sustainable action counts.**
 
 
-## ⚙️ Main Features (MVP)
+## Main Features (MVP)
 
 | Feature | Description |
 |---------|-------------|
 |  **User Profile** | Create a profile with username and password (data is stored locally in `users.csv`). |
 | **Challenges** | One *daily challenge* and a never-ending series of *extra challenge* are generated based on the user's level. |
-| **Educational Chat** | EcoMentor AI answers questions only about green topics (ecology, energy, recycling, climate, etc.) using a free LLM's API. |
+| **Educational Chat** | EcoMentor AI answers questions only about green topics (ecology, energy, recycling, climate, etc.) using an LLM's API. |
 | **Personal Dashboard** | Graphs and metrics show level, XP, completed challenges, and CO₂ saved. |
 | **Custom Goals** | Users can set a CO₂ reduction goal and track their progress. |
 | **Gamification** | XP, levels and badges such as “EcoNovice”, “EcoSupporter”, “Green Hero”, and “EcoMaster”. |
