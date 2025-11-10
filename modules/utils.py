@@ -66,9 +66,15 @@ def load_users():
             df['last_completions'] = df.apply(lambda x: json.dumps({}), axis=1)
         # Fill missing last_update with current date
         df['last_update'] = df['last_update'].fillna(pd.Timestamp.now().date())
-        # Round CO2 saved to 1 decimal
-        df['co2_saved'] = df['co2_saved'].round(1)
-        
+
+        # Ensure co2_saved is numeric before rounding to avoid TypeError
+        if 'co2_saved' in df.columns:
+            # Convert non-numeric and missing to 0.0 before rounding
+            df['co2_saved'] = pd.to_numeric(df['co2_saved'], errors='coerce').fillna(0)
+            df['co2_saved'] = df['co2_saved'].round(1)
+        else:
+            df['co2_saved'] = 0.0
+
         # Normalize active_challenge_id and optional_challenge_id columns (convert to int or '')
         for col in ['active_challenge_id', 'optional_challenge_id']:
             df[col] = df[col].apply(lambda x: int(x) if pd.notnull(x) and str(x).replace('.0', '').isdigit() else '')
@@ -103,8 +109,10 @@ def save_users(df):
         df['last_completions'] = df['last_completions'].apply(
             lambda x: json.dumps(json.loads(x) if isinstance(x, str) else x)
         )
-    # Ensure co2_saved is rounded to 1 decimal
-    df['co2_saved'] = df['co2_saved'].round(1)
+    # Ensure co2_saved is rounded to 1 decimal, and of float type
+    if 'co2_saved' in df.columns:
+        df['co2_saved'] = pd.to_numeric(df['co2_saved'], errors='coerce').fillna(0)
+        df['co2_saved'] = df['co2_saved'].round(1)
     # Normalize challenge columns to empty string or int
     for col in ['active_challenge_id', 'optional_challenge_id']:
         df[col] = df[col].apply(lambda x: int(x) if pd.notnull(x) and str(x).replace('.0', '').isdigit() else '')
